@@ -46,7 +46,7 @@ const fs = require('fs');
                     console.log(`Page error: ${err.toString()}`);
                 });
                 await page.setDefaultNavigationTimeout(0); 
-                const pageUrl = 'https://discord.com/login?redirect_to=%2Foauth2%2Fauthorize%3Fscope%3Didentify%2520guilds%2520email%26redirect_uri%3Dhttps%253A%252F%252Ftop.gg%252Flogin%252Fcallback%26response_type%3Dcode%26client_id%3D264434993625956352';
+                const pageUrl = 'https://discord.com/oauth2/authorize?scope=identify%20guilds%20email&redirect_uri=https%3A%2F%2Ftop.gg%2Flogin%2Fcallback&response_type=code&client_id=422087909634736160&state=L2JvdC8xMDI4OTU2NjA5MzgyMTk5MzQ2L3ZvdGU=';
 
                     try {
                         await page.goto(pageUrl, {
